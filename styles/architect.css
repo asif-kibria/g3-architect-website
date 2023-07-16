@@ -3,19 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;800&display=swap');
 
 /* shared styles */
-
-.text-light-gray {   
-        color: #727272;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.text-light-gray {
+    color: #727272;
 }
 
 
-.section-title{
+.section-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
 
-.btn-primary{
+.btn-primary {
     color: #FFF;
     border-radius: 8px;
     background: #FF900E;
@@ -27,39 +30,46 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
+
 /* header styles */
 
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
-} 
-nav li{
+}
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #424242;
 }
+
 /* banner section style */
-.banner-content{
+.banner-content {
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
@@ -69,106 +79,203 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
+
 /* main section styles */
-main{
+main {
     margin: 70px auto;
     max-width: 1440px;
- 
- }
+
+}
 
 /* teams section styles */
-.teams-container{
-    display: flex;  
+.teams-container {
+    display: flex;
     align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
-  
+
+.teams-content {
+
     padding-left: 70px;
     padding-right: 70px;
 }
-.teams-title{
+
+.teams-title {
     font-size: 2.8rem;
 }
-.quick{
-  color: #727272;  
-  font-weight: 500;
+
+.quick {
+    color: #727272;
+    font-weight: 500;
 }
-.text-features{
-   color: #FF900E;
-   font-weight: 700;
+
+.text-features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* feature section */
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
 }
 
 /* facts section */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-.facts-card-container .card{
- border-radius: 8px;
- border: 1px solid #FF900E;
- text-align: center;
- padding:30px;
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
 }
-.facts-card-container .card-title{
+
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
-.facts-card-container .card-stats{
-font-size: 2.8rem ;
-color: #424242;
-margin-top: 10px;
-margin-bottom: 10px;
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
- /* sponsors style  */
-.sponsors{
-    text-align:center;
+
+/* sponsors style  */
+.sponsors {
+    text-align: center;
 }
-.sponsors-img-container{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
     gap: 20px;
 }
-.sponsors-img-container img{
-    width:165px ;
+
+.sponsors-img-container img {
+    width: 165px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 150px;
+    text-align: center;
+    color: #424242;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: #FFF4E7;
 }
 
 
 /* responsive styles */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-   nav, .teams-container,  .facts-card-container, .sponsors-img-container{
-        flex-direction: column;
-    }
-    .teams-img-container{
-        grid-template-columns: 1fr;
-    }
-    .teams-content,  .facts-card-container{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .facts-card-container
-    {
-        gap: 20px;
-    }
-}
 
-/* medium or tablet devices */
-@media screen and (min-width:576px) and (max-width:960px) {
-    header{
-        padding: 40px;
-    }
-    nav, .teams-container, .sponsors-img-container{
+    nav,
+    .teams-container,
+    .features,
+    .facts-card-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
-}
+
+    .feature-img img {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+        width: 250px;
+
+        .teams-img-container {
+            grid-template-columns: 1fr;
+        }
+
+        .teams-content,
+        .facts-card-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .facts-card-container {
+            gap: 20px;
+        }
+        footer{
+            width: 300px;
+            padding: 20px 50px;
+        }
+    }
+
+
+    /* medium or tablet devices */
+    @media screen and (min-width:576px) and (max-width:960px) {
+        header {
+            padding: 40px;
+        }
+
+        nav,
+        .teams-container,
+        .features,
+        .sponsors-img-container {
+            flex-direction: column;
+        }
+    }
