@@ -78,10 +78,8 @@ main{
 
 /* teams section styles */
 .teams-container{
-    display: flex;
-   
+    display: flex;  
     align-items: center;
-
 }
 .teams-img-container{
     display: grid;
@@ -89,6 +87,7 @@ main{
     gap: 1.5rem;
 }
 .teams-content{
+  
     padding-left: 70px;
     padding-right: 70px;
 }
@@ -148,7 +147,7 @@ margin-bottom: 10px;
     header{
         padding: 20px;
     }
-   nav, .teams-container,  .facts-card-container, '.sponsors-img-container{
+   nav, .teams-container,  .facts-card-container, .sponsors-img-container{
         flex-direction: column;
     }
     .teams-img-container{
@@ -169,7 +168,7 @@ margin-bottom: 10px;
     header{
         padding: 40px;
     }
-    nav, .teams-container{
+    nav, .teams-container, .sponsors-img-container{
         flex-direction: column;
     }
 }
